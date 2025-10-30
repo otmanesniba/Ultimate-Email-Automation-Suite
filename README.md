@@ -56,10 +56,47 @@ python --version
 pip install pyppeteer imaplib smtplib email pyfiglet termcolor getpass
 ```
 
-### Step 3: Install Browser Dependencies
-The script uses Microsoft Edge for web scraping. Ensure you have:
-- **Microsoft Edge** browser installed
-- Edge WebDriver (usually comes with Edge installation)
+### Step 3: Install Microsoft Edge (Required for Email Collection)
+**The script requires Microsoft Edge browser for web scraping functionality:**
+
+- **Download Microsoft Edge**: [Official Download Page](https://www.microsoft.com/en-us/edge)
+- **Windows Users**: Usually pre-installed on Windows 10/11 systems
+- **Verify Installation**: Ensure Edge is installed in the default location
+- **No additional drivers needed** - The script handles everything automatically
+
+### 🔧 Alternative: Using Chrome Instead
+If you prefer Google Chrome, modify this line in the script (around line 605):
+
+```python
+# CHANGE FROM:
+executablePath="C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+
+# CHANGE TO:
+executablePath="C:/Program Files/Google/Chrome/Application/chrome.exe"
+```
+
+**Note**: The script is tested and optimized for Microsoft Edge. Chrome modification is optional.
+
+---
+
+## 🎯 Quick Start
+1. **Install Python 3.7+**
+2. **Install dependencies** (`pip install pyppeteer pyfiglet termcolor`)
+3. **Install Microsoft Edge** (required for email collection)
+4. **Run the script** (`python email_automation.py`)
+
+**Microsoft Edge is mandatory for the email scraping features to work properly!**
+
+
+
+
+
+
+
+
+
+
+
 
 ### Step 4: Download the Script
 Save the provided Python script as `email_automation.py`
